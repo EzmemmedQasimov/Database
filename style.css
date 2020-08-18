@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+
+input[name='gender'] {
+    appearance: none;
+    outline: none;
+    border-radius: 60%;
+    cursor: pointer;
+    
+}
+input[name='gender']:after {
+        font-family: 'FontAwesome';
+        display: inline-block;
+        text-align: center;
+        font-size: 17px;
+        content: attr(data-icon);
+        padding: 15px 15px;
+        border-radius: 60%;
+        color: rgba(0,0,0,.4);
+        transition: color .3s;
+    }
+    
+    input[name='gender']:checked:after {
+       
+        background-color: #94eb75;
+        color: #fff;
+        }
+    
+
+#left{
+    height: 100vh;
+    width: 100%;
+}
+
+#date{
+    width: 100px;
+}
+
+
+
+#form{
+    margin-top: 70px;
+    padding-left: 50px;
+}
+
+form input{
+    font-size: 24px;
+letter-spacing: 0px;
+color: #c8d3dc;
+font-weight: 400;
+font-family: 'Roboto', sans-serif;
+background-color: #fbfbfc !important;
+}
+
+form label{
+    color: #818587 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #save {
+        margin-top: 10px;
+     margin-left: 100px;
+    }
+    #sub{
+        margin-left: 120px;
+    }
+  }
+  
+
